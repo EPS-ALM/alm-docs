@@ -19,7 +19,6 @@
 | 190016663 | [Lucas Pimentel Quintão][lpq]          | Gerente de Projeto | Ativos                         |
 | 190084731 | [Augusto Durães Camargo][adc]          | Desenvolvedor      | Ativos                         |
 | 170008291 | [Cristian Furtado][cf]                 | Desenvolvedor      | Passivos                       |
-| 180015311 | [Danilo Domingo Vitoriano Silva][ddvs] | Desenvolvedor      | Passivos                       |
 | 190026758 | [Deivid Carvalho][dc]                  | Desenvolvedor      | Passivos                       |
 | 180119231 | [Eduardo Maia Rezende][emr]            | Desenvolvedor      | Ativos                         |
 | 190027088 | [Eliás Yousef][ey]                     | Desenvolvedor      | Riscos <br> Design             |
@@ -51,7 +50,6 @@
 [lpq]: https://github.com/LucasPimentel123
 [adc]: https://github.com/augustocrmg
 [cf]: https://github.com/csafurtado
-[ddvs]: https://github.com/danilow200
 [dc]: https://github.com/deivid-a1
 [emr]: https://github.com/eduardomr
 [ey]: https://github.com/eliasyousef00

@@ -9,7 +9,6 @@
 | 190016663 | Lucas Pimentel Quintão         | [Acordo de Serviço Individual](./Acordo_de_Servico_Lucas_Pimentel_ALM.pdf)        | Gerente de Projeto | Ativos             |
 | 190084731 | Augusto Durães Camargo         | [Acordo de Serviço Individual](./Acordo_de_Servico_AugustoCamargo_ALM.pdf)        | Desenvolvedor      | Ativos             |
 | 170008291 | Cristian Furtado               | [Acordo de Serviço Individual](./Acordo_de_Servico_CristianFurtado_ALM.pdf)       | Desenvolvedor      | Passivos           |
-| 180015311 | Danilo Domingo Vitoriano Silva | [Acordo de Serviço Individual](./Acordo_de_Servico_DaniloDomingo_ALM.pdf)         | Desenvolvedor      | Passivos           |
 | 190026758 | Deivid Carvalho                | [Acordo de Serviço Individual](./Acordo_de_Servico_DeividCarvalho_ALM.pdf)        | Desenvolvedor      | Passivos           |
 | 180119231 | Eduardo Maia Rezende           | [Acordo de Serviço Individual](./Acordo_de_Servico_EduardoMaia.pdf)               | Desenvolvedor      | Ativos             |
 | 190027088 | Eliás Yousef                   | [Acordo de Serviço Individual](./Acordo_de_Servico_EliasYousef_ALM.pdf)           | Desenvolvedor      | Riscos <br> Design |
