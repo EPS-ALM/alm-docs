@@ -133,3 +133,4 @@ Esse documento tem como objetivo apresentar os relatórios semanais do projeto d
 ### Atividades Realizadas
 
 - **Release MVP 16/12/2024**: Lançamento do MVP do sistema de ALM para validação do cliente.
+- **Documentação e Relatórios da Release**: Documentação e relatórios da release do MVP do sistema de ALM para o cliente.
