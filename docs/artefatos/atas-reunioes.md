@@ -19,7 +19,6 @@
 - Lucas Pimentel Quintão
 - Augusto Durães Camargo
 - Cristian Furtado
-- Danilo Domingo Vitoriano Silva
 - Deivid Carvalho
 - Eduardo Maia Rezende
 - Eliás Yousef
@@ -48,7 +47,6 @@
 - Lucas Pimentel Quintão
 - Augusto Durães Camargo
 - Cristian Furtado
-- Danilo Domingo Vitoriano Silva
 - Deivid Carvalho
 - Eduardo Maia Rezende
 - Eliás Yousef
@@ -79,7 +77,6 @@
 - Lucas Pimentel Quintão
 - Augusto Durães Camargo
 - Cristian Furtado
-- Danilo Domingo Vitoriano Silva
 - Deivid Carvalho
 - Eduardo Maia Rezende
 - Eliás Yousef
@@ -109,7 +106,6 @@
 - Lucas Pimentel Quintão
 - Augusto Durães Camargo
 - Cristian Furtado
-- Danilo Domingo Vitoriano Silva
 - Deivid Carvalho
 - Eduardo Maia Rezende
 - Eliás Yousef
