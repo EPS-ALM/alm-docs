@@ -134,3 +134,10 @@ Esse documento tem como objetivo apresentar os relatórios semanais do projeto d
 
 - **Release MVP 16/12/2024**: Lançamento do MVP do sistema de ALM para validação do cliente.
 - **Documentação e Relatórios da Release**: Documentação e relatórios da release do MVP do sistema de ALM para o cliente.
+
+## Semana 9: 06/01/2025 a 11/01/2025
+
+### Atividades realizadas
+
+- **Reunião**: A equipe se reuniu para alinhar e decidir o que seria realizado nas próximas semanas.
+- **Elaboração do contrato**: Na reunião ficou decidido que a funcionalidade a ser realizada
