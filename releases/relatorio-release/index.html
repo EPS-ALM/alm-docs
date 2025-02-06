@@ -1,0 +1,1750 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../primeira-release/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.2">
+    
+    
+      
+        <title>Relatório - ALM</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.d7758b05.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#relatorio-de-release-release-100" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ALM" class="md-header__button md-logo" aria-label="ALM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ALM
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Relatório
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ALM" class="md-nav__button md-logo" aria-label="ALM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ALM
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sobre
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../artefatos/relatorio-semanal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relatório de Status
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../artefatos/atas-reunioes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Artefatos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Artefatos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Abertura do Projeto
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Abertura do Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../artefatos/tap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Termo de Abertura do Projeto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../artefatos/ts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Termo de Acordo de Serviço
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acordo-servico-individual/acordos-servico/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Termo de Acordo de Serviço Individual
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_4" id="__nav_4_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Acordos de Serviço
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Acordos de Serviço
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../artefatos/acordo-equipe_ativos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Termo de Acordo de Serviço (Equipe Gestão de Ativos)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../artefatos/acordo-equipe_passivos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Termo de Acordo de Serviço (Equipe Gestão de Passivos)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../artefatos/acordo-equipe_riscos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Termo de Acordo de Serviço (Equipe Gestão de Riscos)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Story map
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Story map
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../artefatos/storymap/personas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../artefatos/storymap/elicitacao-requisitos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elicitação de requisitos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../artefatos/storymap/historias-usuario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Histórias de usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../artefatos/storymap/epicos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Épicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../artefatos/storymap/priorizacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Priorização
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../artefatos/arquitetura/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documento de Arquitetura de Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../artefatos/prototipo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Protótipo de Interface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Releases
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Releases
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Primeira release
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Primeira release
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../primeira-release/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Relatório
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Relatório
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#criterios-de-avaliacao-coletiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Avaliação Coletiva
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critérios de Avaliação Coletiva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-praticas-ageis" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Práticas Ágeis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Práticas Ágeis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-commits-atomicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Commits atômicos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-documentacao-das-sprints" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Documentação das sprints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-quantidade-de-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Quantidade de Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="c. Quantidade de Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#media-de-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Média de Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      d. Pull Requests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-qualidade-das-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      e. Qualidade das Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-qualidade-dos-pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      f. Qualidade dos Pull Requests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-velocity-e-curva-de-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      g. Velocity e curva de commits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-praticas-devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Práticas DevOps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-escopo-e-arquitetura" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Escopo e Arquitetura
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criterios-de-avaliacao-individual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Avaliação Individual
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critérios de Avaliação Individual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-quantidade-total-de-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Quantidade total de commits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-quantidade-de-issues-alocadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Quantidade de Issues Alocadas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criterios-de-avaliacao-da-release-1-do-mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Avaliação da Release 1 do MVP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critérios de Avaliação da Release 1 do MVP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-story-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Story Map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-epicos-features-e-us" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Épicos, features e US
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-prototipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Protótipo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-codigo-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Código - Implementação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-arquitetura-documentada" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Arquitetura Documentada
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-configuracao-do-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Configuração do Ambiente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-gitpages" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. GitPages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-padroes-software-livre" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Padrões Software Livre
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-release-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Release Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#criterios-de-avaliacao-coletiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Avaliação Coletiva
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critérios de Avaliação Coletiva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-praticas-ageis" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Práticas Ágeis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Práticas Ágeis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-commits-atomicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Commits atômicos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-documentacao-das-sprints" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Documentação das sprints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-quantidade-de-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Quantidade de Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="c. Quantidade de Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#media-de-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Média de Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      d. Pull Requests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-qualidade-das-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      e. Qualidade das Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-qualidade-dos-pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      f. Qualidade dos Pull Requests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-velocity-e-curva-de-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      g. Velocity e curva de commits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-praticas-devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Práticas DevOps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-escopo-e-arquitetura" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Escopo e Arquitetura
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criterios-de-avaliacao-individual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Avaliação Individual
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critérios de Avaliação Individual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-quantidade-total-de-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Quantidade total de commits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-quantidade-de-issues-alocadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Quantidade de Issues Alocadas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criterios-de-avaliacao-da-release-1-do-mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Avaliação da Release 1 do MVP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critérios de Avaliação da Release 1 do MVP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-story-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Story Map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-epicos-features-e-us" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Épicos, features e US
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-prototipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Protótipo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-codigo-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Código - Implementação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-arquitetura-documentada" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Arquitetura Documentada
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-configuracao-do-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Configuração do Ambiente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-gitpages" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. GitPages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-padroes-software-livre" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Padrões Software Livre
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-release-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Release Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="relatorio-de-release-release-100">Relatório de Release - Release 1.0.0</h1>
+<p>Este relatório avalia, seguindo os critérios de avaliação propostos pelo professor, a primeira release do projeto de ALM.</p>
+<h2 id="criterios-de-avaliacao-coletiva">Critérios de Avaliação Coletiva</h2>
+<h3 id="1-praticas-ageis">1. Práticas Ágeis</h3>
+<h4 id="a-commits-atomicos">a. Commits atômicos</h4>
+<p>Executando o comando <code>git log --pretty=format:"%h - %an, %ar : %s" -n 10</code> é possível visualizar os últimos 10 commits do repositório. A partir disso, é possível observar que os commits são atômicos:</p>
+<details>
+  <summary>alm-docs</summary>
+  <img src="../assets/commits-alm-docs.png" alt="Commits do repositório alm-docs">
+</details>
+
+<details>
+  <summary>alm-liability</summary>
+  <img src="../assets/commits-alm-liability.png" alt="Commits do repositório alm-liability">
+</details>
+
+<details>
+  <summary>alm-frontend</summary>
+    <img src="../assets/commits-alm-frontend.png" alt="Commits do repositório alm-frontend">
+</details>
+
+<details>
+  <summary>alm-assets</summary>
+    <img src="../assets/commits-alm-assets.png" alt="Commits do repositório alm-assets">
+</details>
+
+<details>
+  <summary>alm-service</summary>
+    <img src="../assets/commits-alm-service.png" alt="Commits do repositório alm-service">
+</details>
+
+<details>
+  <summary>alm-risk-manager</summary>
+    <img src="../assets/commits-alm-risk-manager.png" alt="Commits do repositório alm-risk-manager">
+</details>
+
+<details>
+  <summary>stocks-forecasting</summary>
+    <img src="../assets/commits-stocks-forecasting.png" alt="Commits do repositório stocks-forecasting">
+</details>
+
+<h4 id="b-documentacao-das-sprints">b. Documentação das sprints</h4>
+<p>A documentação das sprints está disponível no repositório <code>alm-docs</code>. A documentação da primeira sprint pode ser acessada <a href="../../artefatos/relatorio-semanal/">aqui</a>.</p>
+<h4 id="c-quantidade-de-issues">c. Quantidade de Issues</h4>
+<p>Devido ao caráter avaliativo da disciplina, as issues foram centralizadas no repositório <code>alm-docs</code>. A quantidade de issues pode ser visualizada <a href="https://github.com/EPS-ALM/alm-docs/issues">aqui</a>.</p>
+<h5 id="media-de-issues">Média de Issues</h5>
+<p>Considerando que, nesse momento, existem 54 issues cadastradas. A média de issues por sprint é de, aproximadamente, 7.</p>
+<p><img alt="Média de Issues por Sprint" src="../assets/issues.png" /></p>
+<h4 id="d-pull-requests">d. Pull Requests</h4>
+<p>A quantidade de pull requests para cada repositório pode ser visualizada abaixo:</p>
+<details>
+  <summary>alm-docs</summary>
+  <img src="../assets/pr-alm-docs.png" alt="Pull Requests do repositório alm-docs">
+</details>
+
+<details>
+  <summary>alm-liability</summary>
+  <img src="../assets/pr-alm-liability.png" alt="Pull Requests do repositório alm-liability">
+</details>
+
+<details>
+  <summary>alm-frontend</summary>
+    Não houve necessidade de Pull Requests pois o desenolvimento foi feito por um único membro.
+</details>
+
+<details>
+  <summary>alm-assets</summary>
+    <img src="../assets/pr-alm-assets.png" alt="Pull Requests do repositório alm-assets">
+</details>
+
+<details>
+  <summary>alm-service</summary>
+    <img src="../assets/pr-alm-service.png" alt="Pull Requests do repositório alm-service">
+</details>
+
+<details>
+  <summary>alm-risk-manager</summary>
+    <img src="../assets/pr-alm-risk-manager.png" alt="Pull Requests do repositório alm-risk-manager">
+</details>
+
+<details>
+  <summary>stocks-forecasting</summary>
+  Não houve necessidade de Pull Requests pois o desenolvimento foi feito em pareamento síncrono.
+</details>
+
+<h4 id="e-qualidade-das-issues">e. Qualidade das Issues</h4>
+<p>As issues estão bem descritas e organizadas. A descrição das issues é clara e objetiva, facilitando a compreensão do que deve ser feito. Porém, a análise deve ser comprovada manualmente para cada repositório.</p>
+<h4 id="f-qualidade-dos-pull-requests">f. Qualidade dos Pull Requests</h4>
+<p>Os pull requests não possuem documentação, checkilist, ou qualquer outra forma de garantir a qualidade do código além da revisão manual. A análise de qualidade deve ser comprovada manualmente para cada repositório.</p>
+<h4 id="g-velocity-e-curva-de-commits">g. Velocity e curva de commits</h4>
+<p>A curva de commits pode ser obtida atráves do comando <code>•git log --pretty=format:"%ad" --date=short | sort | uniq -c</code>. A curva de commits para cada repositório pode ser visualizada abaixo:</p>
+<details>
+  <summary>alm-docs</summary>
+  <img src="../assets/velocity-alm-docs.png" alt="Commits do repositório alm-docs">
+  <img src="../assets/velocity-github-alm-docs.png" alt="Commits do repositório alm-docs no github">
+</details>
+
+<details>
+  <summary>alm-liability</summary>
+  <img src="../assets/velocity-alm-liability.png" alt="Commits do repositório alm-liability">
+  <img src="../assets/velocity-github-alm-liability.png" alt="Commits do repositório alm-liability no github">
+</details>
+
+<details>
+  <summary>alm-frontend</summary>
+    <img src="../assets/velocity-alm-frontend.png" alt="Commits do repositório alm-frontend">
+    <img src="../assets/velocity-github-alm-frontend.png" alt="Commits do repositório alm-frontend no github">
+</details>
+
+<details>
+  <summary>alm-assets</summary>
+    <img src="../assets/velocity-alm-assets.png" alt="Commits do repositório alm-assets">
+    <img src="../assets/velocity-github-alm-assets.png" alt="Commits do repositório alm-assets no github">
+</details>
+
+<details>
+  <summary>alm-service</summary>
+    <img src="../assets/velocity-alm-service.png" alt="Commits do repositório alm-service">
+    <img src="../assets/velocity-github-alm-service.png" alt="Commits do repositório alm-service no github">
+</details>
+
+<details>
+  <summary>alm-risk-manager</summary>
+    <img src="../assets/velocity-alm-risk-manager.png" alt="Commits do repositório alm-risk-manager">
+    <img src="../assets/velocity-github-alm-risk-manager.png" alt="Commits do repositório alm-risk-manager no github">
+</details>
+
+<details>
+  <summary>stocks-forecasting</summary>
+    <img src="../assets/velocity-stocks-forecasting.png" alt="Commits do repositório stocks-forecasting">
+    <img src="../assets/velocity-github-stocks-forecasting.png" alt="Commits do repositório stocks-forecasting no github">
+</details>
+
+<h3 id="2-praticas-devops">2. Práticas DevOps</h3>
+<p>Deploy automático do repositórios de alm-liability, alm-assets, alm-service e alm-risk-manager foi realizado no Heroku:</p>
+<ul>
+<li><strong>Service</strong>: <a href="https://alm-service-eae21cd8fb32.herokuapp.com/portfolio-allocation">alm-service</a></li>
+<li><strong>Assets</strong>: <a href="https://alm-assets-898cc81ff044.herokuapp.com/">alm-assets</a></li>
+<li><strong>Risk Manager</strong>: <a href="https://almriskmanager-16e9ecd81666.herokuapp.com/">alm-risk-manager</a></li>
+<li><strong>Liability</strong>: <a href="http://187.84.176.16:10100/docs">alm-liability</a></li>
+</ul>
+<p>Já o repositório alm-docs foi hospedado no GitHub Pages:</p>
+<ul>
+<li><strong>Docs</strong>: <a href="https://eps-alm.github.io/alm-docs/">alm-docs</a> - <a href="https://github.com/EPS-ALM/alm-docs/blob/main/.github/workflows/main.yml">workflow</a></li>
+</ul>
+<p>Por fim, o repositório do frontend foi hospedado no OnReader:</p>
+<ul>
+<li><strong>Frontend</strong>: <a href="https://alm-frontend.onrender.com/">alm-frontend</a></li>
+</ul>
+<h3 id="3-escopo-e-arquitetura">3. Escopo e Arquitetura</h3>
+<ul>
+<li><a href="../../artefatos/storymap/personas/">Story Map</a></li>
+<li><a href="../../artefatos/prototipo/">Protótipo</a></li>
+<li><a href="../../artefatos/arquitetura/">Arquitetura</a></li>
+</ul>
+<h2 id="criterios-de-avaliacao-individual">Critérios de Avaliação Individual</h2>
+<h3 id="1-quantidade-total-de-commits">1. Quantidade total de commits</h3>
+<p>A quantidade total de commits para cada repositório e cada integrante pode ser visualizada abaixo:</p>
+<details>
+  <summary>alm-docs</summary>
+  <img src="../assets/commits-alm-docs-individual.png" alt="Commits do repositório alm-docs por integrante">
+</details>
+
+<details>
+  <summary>alm-liability</summary>
+  <img src="../assets/commits-alm-liability-individual.png" alt="Commits do repositório alm-liability por integrante">
+</details>
+
+<details>
+  <summary>alm-frontend</summary>
+    <img src="../assets/commits-alm-frontend-individual.png" alt="Commits do repositório alm-frontend por integrante">
+</details>
+
+<details>
+  <summary>alm-assets</summary>
+    <img src="../assets/commits-alm-assets-individual.png" alt="Commits do repositório alm-assets por integrante">
+</details>
+
+<details>
+  <summary>alm-service</summary>
+    <img src="../assets/commits-alm-service-individual.png" alt="Commits do repositório alm-service por integrante">
+</details>
+
+<details>
+  <summary>alm-risk-manager</summary>
+    <img src="../assets/commits-alm-risk-manager-individual.png" alt="Commits do repositório alm-risk-manager por integrante">
+</details>
+
+<details>
+  <summary>stocks-forecasting</summary>
+    <img src="../assets/commits-stocks-forecasting-individual.png" alt="Commits do repositório stocks-forecasting por integrante">
+</details>
+
+<h3 id="2-quantidade-de-issues-alocadas">2. Quantidade de Issues Alocadas</h3>
+<p>A quantidade de issues alocadas para cada integrante pode ser visualizada abaixo:</p>
+<ul>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/ArthurFerreiraRodrigues">Arthur Ferreira Rodrigues</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/LucasPimentel123">Lucas Pimentel Quintão</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/augustocrmg">Augusto Durães Camargo</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/csafurtado">Cristian Furtado</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/deivid-a1">Deivid Carvalho</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/eduardomr">Eduardo Maia Rezende</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/eliasyousef00">Eliás Yousef</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/SFernandoS">Fernando Vargas</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/brbsg">Gustavo Barbosa</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/gustavomartins-github">Gustavo Martins Ribeiro</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/joseluis-rt">José Luís Ramos Teixeira</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/luisgaboardi">Luis Guilherme</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/Marcos574">Marcos Vinícius de Deus</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/PabloChristianno">Pablo Christianno Silva Guedes</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/Peedrooo">Pedro Vitor Augusto de Jesus</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/savioc2">Sávio Cunha</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/8ifq3">Victor Hugo</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/issues/assigned/wesleysantos00">Wesley Santos</a></li>
+</ul>
+<h2 id="criterios-de-avaliacao-da-release-1-do-mvp">Critérios de Avaliação da Release 1 do MVP</h2>
+<h3 id="1-story-map">1. Story Map</h3>
+<p>O story map foi desenvolvido e pode ser acessado <a href="../../artefatos/storymap/personas/">aqui</a>.</p>
+<h3 id="2-epicos-features-e-us">2. Épicos, features e US</h3>
+<p>As features planejadas podem ser visualizadas no <a href="https://github.com/EPS-ALM/alm-docs/labels/Feature">GitHub</a>.</p>
+<h3 id="3-prototipo">3. Protótipo</h3>
+<p>O protótipo foi desenvolvido e pode ser acessado <a href="../../artefatos/prototipo/">aqui</a>.</p>
+<h3 id="4-codigo-implementacao">4. Código - Implementação</h3>
+<p>Deve ser analisado manualmente para cada repositório:</p>
+<ul>
+<li><a href="https://gitub.com/EPS-ALM/alm-docs">alm-docs</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-risk-manager">alm-risk-manager</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-service">alm-service</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-assets">alm-assets</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-liability">alm-liability</a></li>
+<li><a href="https://github.com/EPS-ALM/stocks-forecasting">stocks-forecasting</a></li>
+</ul>
+<h3 id="5-arquitetura-documentada">5. Arquitetura Documentada</h3>
+<p>A arquitetura foi documentada e pode ser acessada <a href="../../artefatos/arquitetura/">aqui</a>.</p>
+<h3 id="6-configuracao-do-ambiente">6. Configuração do Ambiente</h3>
+<p>Prcessos de setup de ambiente podem ser acessados no README de cada repositório.</p>
+<h3 id="7-gitpages">7. GitPages</h3>
+<p>O GitHub Pages foi configurado para o repositório <code>alm-docs</code> e pode ser acessado <a href="https://eps-alm.github.io/alm-docs/">aqui</a>.</p>
+<h3 id="8-padroes-software-livre">8. Padrões Software Livre</h3>
+<p>Os padrões de software livre foram seguidos e podem ser acessados pelo GitHub:</p>
+<ul>
+<li><a href="https://github.com/EPS-ALM/alm-docs/blob/main/README.md">ReadMe</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+<li><a href="https://github.com/EPS-ALM/alm-docs/blob/main/CONTRIBUTING.md">Contributing</a></li>
+</ul>
+<h3 id="9-release-notes">9. Release Notes</h3>
+<p>As releases não tiveram suas notas documentadas.</p>
+<h1 id="documento-de-release-assinado">Documento de Release Assinado</h1>
+<p>O documento de release foi assinado por todos os membros da equipe e pode ser acessado <a href="../primeira-release-assinado.pdf">aqui</a>.</p>
+<h1 id="alteracoes">Alterações</h1>
+<p>Não devem ser realizadas alterações nessa página, visto que o documento deve permanecer idêntico ao assinado pelos membros da equipe.</p>
+<p>Data de assinatura: 21/12/2024</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f13b1293.min.js"></script>
+      
+    
+  </body>
+</html>
